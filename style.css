@@ -7,50 +7,43 @@
     "header header header"
     "main main main"
     "footer footer footer";
-    justify-items: center;
+  justify-items: center;
 }
 body {
   background-image: url(images/animals-background-seamless-vector-3442638.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 header {
-    grid-area: header;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    height: 300px;
-    transition: background-image 1s;
-}
-header img {
-    width: 20%;
+  grid-area: header;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  height: auto;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-bottom: 2px solid black;
 }
 
 header h1 {
-    display: inline;
-    font-size: 39px;
+  font-size: 39px;
 }
 
 main {
-    grid-area: main;
-    margin-left: 32px;
-    margin-right: 32px;
-
+  grid-area: main;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 .card {
   text-align: center;
-  width: 600px;
-  height: 200px;
-  margin: 0 auto;
-  float: none;
-  margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 75%);
-  margin-left: 8px;
 }
 
 .card img {

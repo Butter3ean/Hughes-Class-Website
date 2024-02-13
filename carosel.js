@@ -1,8 +1,8 @@
 
-let animalGifs = ['\images\penguins.gif', '\images\manatee.gif', '\images\monkey.gif']
+let animalGifs = ['images/penguins.gif', 'images/manatee.gif', 'images/monkey.gif']
 
 let slideIndex = 0;
-const header = getElementById('header');
+const header = document.getElementById('heading')
 
 function carousel() {
     if (slideIndex > animalGifs.length - 1) {
@@ -10,9 +10,13 @@ function carousel() {
     }
 
     header.style.backgroundImage = `url(${animalGifs[slideIndex]})`;
+    header.style.transition = "background-image 1.5s"
     slideIndex++;
-    
-    setTimeout(carousel, 2000);
 }
 
-carousel();
+function startCarosel() {
+    carousel()
+    setInterval(carousel, 1500)
+}
+
+startCarosel();
