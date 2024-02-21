@@ -2,7 +2,7 @@ let cardDeck = document.getElementById("card-deck");
 
 let animalPages = [{
     img: "images/stock.jpg",
-    url: "StudentSites/Lion/lions.html",
+    url: "StudentSites/Lion/Lions.html",
     animalName: 'Lion'
   },
   {
