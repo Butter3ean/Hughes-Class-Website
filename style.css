@@ -47,11 +47,12 @@ footer {
 }
 
 .card img {
-  width: 75%;
   padding-top: 8px;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  width: 150px;
+  height: 150px;
 }
 
 #card-deck {
